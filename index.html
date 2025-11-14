@@ -298,36 +298,13 @@
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <!-- <img src="./assets/eternax-logo.svg" alt="eternaX Logo" class="w-8 h-8 mr-3"> -->
-                    <span class="text-xl font-bold">eternaX</span>
+                    <a href="https://eternax.ai/index.html" class="text-xl font-bold hover:opacity-70 transition-opacity">eternaX</a>
                 </div>
                 <!-- Desktop nav -->
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="tech.html" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Tech</a>
-                    <a href="platform.html" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Platform</a>
-                    <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.eternax.ai#/explorer" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Explorer</a>
-                    <a href="#team" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Team</a>
+                    <a href="https://eternax.ai/tech.html" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Tech</a>
+                    <a href="https://eternax.ai/index.html#team" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Team</a>
                     <a href="https://drive.google.com/file/d/1gYUlsjM26yQ0FxfLhNgqywXLll65Q33M/view" class="hover:opacity-70 transition-colors" style="color: var(--fg-70)">Litepaper</a>
-                    <button
-                        type="button"
-                        role="switch"
-                        aria-label="Toggle color mode"
-                        aria-checked="false"
-                        title="Switch to light mode"
-                        onclick="toggleTheme()"
-                        class="theme-toggle"
-                    >
-                        <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style="color: var(--fg-70)">
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-                        </svg>
-                        <div class="track" aria-hidden></div>
-                        <svg aria-hidden viewBox="0 0 24 24" fill="currentColor" style="color: var(--fg-70)">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"></path>
-                        </svg>
-                    </button>
-                    <a href="https://docc.eternax.ai/" class="px-4 py-2 rounded-lg font-semibold transition-all text-sm" style="background: var(--pill-bg); color: var(--pill-fg)">
-                        Sign In
-                    </a>
                 </div>
                 <!-- Mobile hamburger -->
                 <div class="md:hidden">
@@ -344,39 +321,38 @@
             <!-- Mobile menu -->
             <div id="mobile-menu" class="md:hidden hidden pb-4" role="dialog" aria-modal="true">
                 <div class="mt-2 space-y-3 border-t pt-4" style="border-color: var(--border)">
-                    <a href="tech.html" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Tech</a>
-                    <a href="platform.html" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Platform</a>
-                    <a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.eternax.ai#/explorer" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Explorer</a>
-                    <a href="#team" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Team</a>
+                    <a href="https://eternax.ai/tech.html" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Tech</a>
+                    <a href="https://eternax.ai/index.html#team" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Team</a>
                     <a href="https://drive.google.com/file/d/1gYUlsjM26yQ0FxfLhNgqywXLll65Q33M/view" class="block px-1 hover:opacity-70 transition-colors" style="color: var(--fg-70)">Litepaper</a>
-                    <div class="flex items-center justify-between pt-3">
-                        <button
-                            type="button"
-                            role="switch"
-                            aria-label="Toggle color mode"
-                            aria-checked="false"
-                            title="Switch to light mode"
-                            onclick="toggleTheme()"
-                            class="theme-toggle"
-                        >
-                            <svg aria-hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style="color: var(--fg-70)">
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-                            </svg>
-                            <div class="track" aria-hidden></div>
-                            <svg aria-hidden viewBox="0 0 24 24" fill="currentColor" style="color: var(--fg-70)">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"></path>
-                            </svg>
-                        </button>
-                        <a href="https://docc.eternax.ai/" class="px-4 py-2 rounded-lg font-semibold transition-all text-sm" style="background: var(--pill-bg); color: var(--pill-fg)">
-                            Sign In
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20" itemscope itemtype="https://schema.org/WebPageElement" itemprop="mainContentOfPage" style="background-color: var(--hero-bg)">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/eternax-network-2.svg'); background-position: center bottom; background-color: transparent;"></div>
+        
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]" style="background-color: transparent;"></div>
+        <div class="relative z-10 text-left max-w-4xl px-4">
+                    <h1 class="text-4xl font-bold mb-6">Thank you for participating in the Season 1 of the EternaX AgentFi Testnet!</h1>
+                    <p class="text-lg mb-6">Join us on <a href="https://x.com/EternaXlabs" class="text-blue-500 hover:text-blue-600">Twitter</a> and <a href="https://t.me/eternax_official" class="text-blue-500 hover:text-blue-600">Telegram</a> for updates on the next season of the testnet and the development of the autonomous AgentFi.</p>
+                    <p class="text-lg mb-6">The agents you deployed have provided us with valuable insights into the capabilities of the autonomous finance. The testnet has achieved:
+                        <ul class="list-disc list-inside text-lg">
+                            <li>181 user agents deployed</li>
+                            <li>1,000,000+ autonomous agent transactions processed</li>
+                            <li>475,000+ predictions made by agents</li>
+                            <li>4,500+ crypto price and social trend predictions markets created</li>
+                        </ul>
+                    </p>
+                    <p class="text-lg mb-6">The data acquired is a one-of-a-kind opportunity to study the behavior of autonomous agents in a real-world environment. Analysis of the data shows that medium-risk agents have achieved an average prediction accuracy of 75.43% on next-hour price predictions, matching the state-of-the-art performance of academic deep learning models. We have published a <a href="https://github.com/eternax-ai/research/blob/main/On-Chain_AI_Agent_Performance_in_Crypto_Prediction_Markets.pdf" class="text-blue-500 hover:text-blue-600">detailed analysis</a> of the data on GitHub.</p>
+                    <p class="text-lg mb-6">The Docc testnet platform is now closed as of <span class="font-bold">November 14, 2025 12:00 PM UTC</span>. The snapshot of <span class="font-bold">XP</span> points you earned by participating in the testnet has been taken at the same time.</p>
+                    <p class="text-lg mb-6">This testnet has shown that autonomous finance is not just a theoretical concept, but a reality that is already being implemented in the real world. We are grateful for your support and feedback. The agents you deployed have provided us with valuable insights into the capabilities of the autonomous finance.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="py-12 border-t" style="background-color: var(--bg); border-color: var(--border)" itemscope itemtype="https://schema.org/WPFooter">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
